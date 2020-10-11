@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/funciones.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+  <body>
+    <section class="calculadora">
+      <h1>CALCULADORA</h1>
+      <div id="visor">
+        <input type="text" id="pantalla" value="0" onclick="vaciar()" />
+      </div>
+      <h2 id="info" class="grande" title="Info sobre el número">Info del número
+      </h2>
+      <div id="operaciones">
+      <div id="unitarias">
+        <h3>Operaciones unitarias</h3>
+        <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
+        <button id="absoluto" onclick="absoluto()">|x|</button>
+        <button id="factorial" onclick="factorial()">f!</button>
+      </div>
+      <div id="binarias">
+        <h3>Operaciones binarias</h3>
+        <button id="suma" onclick="is_signo(signo = '+')">+</button>
+        <button id="multiplicacion" onclick="is_signo(signo ='*')">*</button>
+        <button id="igual" onclick="operacion()">=</button>
+      </div>
+      <div id="csv">
+        <h3>Operaciones con arrays</h3>
+        <button id="sumatorio" onclick="sumatorio()">∑</button>
+        <button id="ordenar" onclick="ordenar()">123</button>
+        <button id="revertir" onclick="revertir()">↔</button>
+        <button id="quitar" onclick="quitar()">¢</button>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>
